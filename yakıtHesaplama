@@ -1,0 +1,17 @@
+benzin=43.8
+dizel=48.3
+lpg=35
+ortalamayakittüketimi=float(input("ort yakit tüketimi: "))
+gidilecekYol=float(input("km :"))
+yakitipi=input("yakıt tıpı : ")
+toplamyakitTüketimi=gidilecekYol*(ortalamayakittüketimi/100)
+  
+if(yakitipi=="benzin"):
+    toplamyakitUcreti=benzin*toplamyakitTüketimi
+elif(yakitipi=="dizel"):
+    toplamyakitUcreti=benzin*toplamyakitTüketimi
+elif(yakitipi=="lpg"):
+    toplamyakitUcreti=benzin*toplamyakitTüketimi
+else:
+    print("yanlıs yakıt seçimi")
+print(toplamyakitUcreti)
